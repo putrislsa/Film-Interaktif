@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diantara Cangkir dan Hati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="trailer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavonia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="trailer.css">
+    <link rel="stylesheet" href="behind-the-scene.css">
+    <link rel="stylesheet" href="tonton-film.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#homepage" class="active">Homepage</a></li>
+                <li><a href="#Penayangan">Penayangan</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#tonton-film">Tonton Film</a></li>
+                <li><a href="#behind-the-scene">Behind the Scene</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="homepage" class="homepage">
+        <div class="homepage-banner">
+            <h1>Holaa, Yu nonton film kita</h1>
+            <a href="#Penayangan" class="button get-started">Get Started</a>
+        </div>        
+    </section>
+
+    <section id="Penayangan" class="content-section">
+        <div class="wrapper">
+            <img src="aset\poster.png" alt="Diantara Cangkir dan Hati Poster" class="poster">
+            <div class="text-content">
+                <div class="title-desc">
+                    <h1>Diantara Cangkir dan Hati</h1>
+                    <p class="description">
+                        Film ini menceritakan tentang seorang pria yang nggak pernah nyangka bakal jatuh cinta secepat ini dengan orang yang baru dia lihat. Apakah ini awal dari semuanya, atau hanya sekedar lewat?
+                    </p>
+                </div>
+                <div class="countdown-buttons">
+                    <div class="countdown" id="countdown">
+                        <div><span>00</span>Hari</div>
+                        <div><span>00</span>Jam</div>
+                        <div><span>00</span>Menit</div>
+                        <div><span>00</span>Detik</div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#trailer" class="button trailer-link">Trailer</a>
+                        <a href="#tonton-film" class="button watch">Tonton Film</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------- BAGIAN TRAILER------------------------------------------------------------>
+    <section id="trailer">
+        <h1>Trailer Film</h1>
+        <div class="trailer-intro">Tonton cuplikan seru dari film kami!</div>
+        <video controls src="aset\Trailer.mp4"></video>
+    </section>
+<!--------------------------------------------------- BAGIAN AKHIR TRAILER-------------------------------------------------------->
+
+<!---------------------------------------------- BAGIAN TONTON FILM INTERAKTIF---------------------------------------------------->
+<section id="tonton-film">
+    <h1>Tonton Film</h1>
+    <div class="intro">Selamat menyaksikan, Enjoy watching the movie!</div>
+    <div class="video-container">
+      <video id="myVideo" controls> <source src="aset\film\vid1.mp4" type="video/mp4">
+      </video>
+      <div id="choice-container" style="display: none;">
+        <div class="video-overlay">
+        <div class="intro">Pilih Jalan Cerita yang kamu mau!</div>
+        <div class="choice">
+          <!-- <img src="aset\image1.jpg" alt="Pilihan 1"> -->
+          <button id="choice1">Izinkan Duduk</button>
+        </div>
+        <div class="choice">
+          <!-- <img src="aset\image2.jpg" alt="Pilihan 2"> -->
+          <button id="choice2">Tidak Izinkan Duduk</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!---------------------------------------------- BAGIAN AKHIR TONTON FILM INTERAKTIF---------------------------------------------->
+   
+<!------------------------------------------------ BAGIAN BEHIND THE SCENE-------------------------------------------------------->
+<section id="behind-the-scene" class="content-section">
+        <div class="container">
+        <h1>Behind the Scene</h1>
+        <div class="behind-the-scene">Pembuatan film yang sangat menyenangkan!</div>
+        <div class="bts-gallery">
+          <div class="bts-item">
+            <img src="aset\gambar1.jpg" alt="Deskripsi Gambar 1">
+            <div class="bts-caption">Briefing talent</div>
+          </div>
+          <div class="bts-item">
+            <img src="aset\gambar2.jpg" alt="Deskripsi Gambar 2">
+            <div class="bts-caption">Proses pengambilan video</div>
+          </div>
+          <div class="bts-item">
+            <img src="aset\gambar3.jpg" alt="Deskripsi Gambar 3">
+            <div class="bts-caption">Talent bingung pilih baju</div>
+          </div>
+          <div class="bts-item">
+            <img src="aset\gambar4.jpg" alt="Deskripsi Gambar 4">
+            <div class="bts-caption">Pengambilan gambar poster</div>
+          </div>
+          <div class="bts-item">
+            <img src="aset\gambar5.jpg" alt="Deskripsi Gambar 5">
+            <div class="bts-caption">Proses pengambilan video</div>
+          </div>
+          <div class="bts-item">
+            <img src="aset\gambar6.jpg" alt="Deskripsi Gambar 6">
+            <div class="bts-caption">Talent tidur</div>
+          </div>
+        </div>
+         </div>
+      </section>
+   <!---------------------------------------------- BAGIAN AKHIR BEHIND THE SCENE------------------------------------------------->
+
+    <!------------------------------------------- Bagian Audio Background Musik --------------------------------------------------->
+     <!-- <audio id="background-music" loop>
+        <source src="aset\Ardhito Pramono - Waking Up Together With You.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio> -->
+     <!-------------------------------------------Bagian Akhir Audio Background Musik ------------------------------------------->
+
+    <!--------------------------------------------------BAGIAN AKHIR JAM REAL TIME ---------------------------------------------->
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + (2 + 7 - targetDate.getDay()) % 7);
+            targetDate.setHours(11, 0, 0, 0);
+
+            const now = new Date();
+            const diff = targetDate - now;
+
+            if (diff < 0) {
+                document.getElementById("countdown").innerHTML = "<div>Film Sudah Tayang!</div>";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `
+                <div><span>${days.toString().padStart(2, '0')}</span>Hari</div>
+                <div><span>${hours.toString().padStart(2, '0')}</span>Jam</div>
+                <div><span>${minutes.toString().padStart(2, '0')}</span>Menit</div>
+                <div><span>${seconds.toString().padStart(2, '0')}</span>Detik</div>
+            `;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        <!-------------------------------------------BAGIAN AKHIR JAM REAL TIME ------------------------------------------->
+
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("header nav ul li a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").substring(1) === current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+
+        document.querySelector('.trailer-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = document.getElementById('trailer');
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+         document.querySelectorAll('a[href^="#"]:not(.trailer-link)').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+<!-- <script src="music-control.js"></script> -->
+<script src="script.js"></script>
+</body>
+</html>

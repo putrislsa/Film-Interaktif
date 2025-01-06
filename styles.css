@@ -1,0 +1,307 @@
+body {
+    background: linear-gradient(to bottom right, #ffe1e1, #fff0f5);
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Lavonia', serif; /* Apply Lavonia font */
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #d1748d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d1748d;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #b3526d;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #d1748d;
+    padding-bottom: 5px;
+}
+
+.content-section {
+    padding: 100px 20px;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poster {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.title-desc {
+    margin-bottom: 30px;
+    text-align: center; /* Pusatkan teks judul dan deskripsi */
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #d1748d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #777;
+}
+
+.countdown-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan tombol dan countdown */
+}
+
+.countdown {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.countdown div {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.countdown span {
+    display: block;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #d1748d;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button.watch {
+    color: white;
+    background-color: #d1748d;
+}
+
+.button.trailer {
+    color: #d1748d;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #d1748d;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button.trailer-link { /* Style untuk tombol trailer di home */
+    color: #d1748d; /* Warna teks merah muda */
+    background-color: white; /* Latar belakang putih */
+    border: 2px solid #d1748d; /* Border merah muda */
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button.trailer-link:hover {
+    background-color: #ffe6f0; /* Warna latar belakang saat di-hover (merah muda muda) */
+    opacity: 1; /* Opacity penuh saat di-hover */
+    cursor: pointer; /* Menambahkan cursor pointer */
+}
+/* Style untuk tombol watch */
+.button.watch {
+    color: white;
+    background-color: #d1748d;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+.button.watch:hover {
+    background-color: #b3526d; /* Warna latar belakang saat di-hover (merah muda lebih tua) */
+    opacity: 1; /* Opacity penuh saat di-hover */
+    cursor: pointer; /* Menambahkan cursor pointer */
+}
+
+/* Additional CSS for homepage */
+.homepage-banner {
+    background: linear-gradient(to bottom, rgba(215, 116, 141, 0.7), rgba(255, 240, 245, 0.7)), 
+                url('aset/banner.jpg') no-repeat center center/cover;
+    height: 100vh; /* Perbesar tinggi elemen banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.homepage-banner h1 {
+    margin-bottom: 20px; /* Tambahkan jarak bawah untuk judul */
+    font-size: 3.5em;
+    color: white; /* Ubah warna teks menjadi putih */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-banner .button.get-started {
+    margin-top: 20px; /* Tambahkan jarak antara tombol dan judul */
+    padding: 15px 30px; /* Ukuran padding untuk kotak */
+    font-size: 1.2em;
+    color: white; /* Warna teks pada tombol */
+    background-color: #d1748d; /* Warna latar tombol */
+    border: none;
+    border-radius: 5px; /* Hilangkan tepi melengkung */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.homepage-banner .button.get-started:hover {
+    background-color: #b3526d; /* Warna tombol saat hover */
+}
+
+.featured-section {
+    padding: 50px 20px;
+    background-color: #fff0f5;
+}
+
+.featured-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #d1748d;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}

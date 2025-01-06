@@ -1,0 +1,57 @@
+/* behind-the-scene.css */
+
+#behind-the-scene {
+    padding: 50px 0;
+    text-align: center; /* Menjaga judul tetap rata tengah */
+  }
+  
+  #behind-the-scene h2 {
+    color: #d1748d;
+    margin-bottom: 50px;
+  }
+  
+  .bts-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  
+  .bts-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative; /* Agar caption bisa diposisikan secara absolut */
+  }
+  
+  .bts-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .bts-item img {
+    width: 100%;
+    height: 300px; /* Atur tinggi minimum */
+    object-fit: cover;
+    display: block;
+  }
+  
+  .bts-caption {
+    background-color: rgba(209, 116, 141, 0.6); /* Warna pink dengan transparansi 60% */
+    color: #fff; /* Warna putih */
+    padding: 6px;
+    text-align: center;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: normal; /* Menghapus efek bold */
+  }
+
+  #behind-the-scene .behind-the-scene {
+    font-size: 1.2em;
+    color: #b32828;
+    margin-bottom: 20px;
+}
+
+  

@@ -1,0 +1,34 @@
+/* Style untuk bagian Trailer */
+#trailer {
+    padding: 80px 20px 40px; /* Padding atas, samping, dan bawah */
+    text-align: center; /* Pusatkan konten secara horizontal */
+}
+
+#trailer .trailer-intro {
+    font-size: 1.2em;
+    color: #b32828;
+    margin-bottom: 10px;
+}
+
+/* Style langsung ke elemen video */
+#trailer video {
+    display: block; /* Mencegah spasi kosong di bawah video */
+    max-width: 90%; /* Membuat video responsif */
+    height: auto;
+    margin: 20px auto; /* Memusatkan video dan memberi jarak */
+    border-radius: 10px; /* Memberikan sudut bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Efek bayangan tipis */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    #trailer video {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    #trailer video {
+        max-width: 98%;
+    }
+}
